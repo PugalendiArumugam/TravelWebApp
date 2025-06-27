@@ -1,0 +1,37 @@
+import 'package:flutter/material.dart';
+
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _MyWidgetState();
+}
+
+class _MyWidgetState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: ListView(
+        scrollDirection: Axis.vertical,
+        children: [
+          // main
+          Container(height: 500, width: double.maxFinite),
+          // skills
+          Container(
+            height: 500,
+            width: double.maxFinite,
+            color: Colors.blueGrey,
+          ),
+          // projects
+          Container(height: 500, width: double.maxFinite),
+          // contact
+          Container(
+            height: 500,
+            width: double.maxFinite,
+            color: Colors.blueGrey,
+          ),
+        ],
+      ),
+    );
+  }
+}
